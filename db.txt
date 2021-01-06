@@ -1,5 +1,6 @@
-var products = [
-  'The Amazon of CBD',
+{
+"products":
+[ 'The Amazon of CBD',
   'Best ski resorts to live, work and shred at',
   'The Easiest Way To Create Marketing Videos',
   'ShotBy Stamp to Videos from Phone Gallery & Watermark Camera',
@@ -25,18 +26,5 @@ var products = [
   'Charge your gadgets with the Best Cables',
   'An SSD that fits on your keychain',
   'global heights, global heights sohna',
-  'Peer to peer, disposable & secure video chat.'
-]
-var xmlhttp = new XMLHttpRequest();
-xmlhttp.onreadystatechange = function() {
-  if (this.readyState == 4 && this.status == 200) {
-    var myObj = JSON.parse(this.responseText);
-    document.getElementById("productPlace").innerHTML = myObj.products[0];
-  }
-};
-xmlhttp.open("GET", "db.txt", true);
-xmlhttp.send();
-
-
-// var randomNumber = Math.floor(Math.random()*(products.length));
-// document.getElementById('productPlace').innerHTML = products[randomNumber];
+  'Peer to peer, disposable & secure video chat.']
+}
