@@ -27,11 +27,13 @@ var products = [
   'global heights, global heights sohna',
   'Peer to peer, disposable & secure video chat.'
 ]
+
+var randomNumber = Math.floor(Math.random()*(products.length))
 var xmlhttp = new XMLHttpRequest();
 xmlhttp.onreadystatechange = function() {
   if (this.readyState == 4 && this.status == 200) {
     var myObj = JSON.parse(this.responseText);
-    document.getElementById("productPlace").innerHTML = myObj.products[0];
+    document.getElementById("productPlace").innerHTML = myObj.products[randomNumber];
   }
 };
 xmlhttp.open("GET", "db.txt", true);
