@@ -16,7 +16,7 @@ var products = [
   'Smart obstacle avoidance, following, playing music, tracking',
   'Collaborate with super freelance designers.',
   '70+ Black Friday deals from direct-to-consumer brands',
-  'Discount Coupon' ,
+  'Discount Coupon',
   'Explore 200 Startup Deals in Just 2 Minutes 😮',
   'Natural Pink Crystal Night Light Air Purifier w/ Holder',
   'Leaderboard with your friends for your favorite games',
