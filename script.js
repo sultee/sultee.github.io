@@ -28,11 +28,11 @@ var products = [
   'Peer to peer, disposable & secure video chat.'
 ]
 
-var randomNumber = Math.floor(Math.random()*(products.length))
 var xmlhttp = new XMLHttpRequest();
 xmlhttp.onreadystatechange = function() {
   if (this.readyState == 4 && this.status == 200) {
     var myObj = JSON.parse(this.responseText);
+    var randomNumber = Math.floor(Math.random()*(myObj.products.length));
     document.getElementById("productPlace").innerHTML = myObj.products[randomNumber];
   }
 };
